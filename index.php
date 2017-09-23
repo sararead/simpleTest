@@ -27,9 +27,9 @@ document.getElementById("replaceText").innerHTML = "You clicked the button!";
 
 function test(messageChanged){
 	if(messageChanged===true){
-	console.log(true);
+	return true;
 	} else {
-	console.log(false);
+	return false;
 	}
 
 }
