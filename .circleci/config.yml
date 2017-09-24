@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/php:latest
+      - image: circleci/php:7.1.8-browsers
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -18,6 +18,8 @@ jobs:
 
     steps:
       - checkout
+      - run: sudo apt install -y libsqlite3-dev
+      - run: composer self-update
 
       # Download and cache dependencies
       - restore_cache:
