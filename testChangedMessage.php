@@ -8,17 +8,25 @@
   <script src="index.php"></script>
 
   <script>
-  	QUnit.test("Test Message Change", function( assert ){
-  		"#testButton".click;
+    
+  	
+ 	var replacementText = QUnit.start("index.php", function(){
+        QUnit.click("#testButton");
+  			 return document.getElementById("replaceText").innerHTML;
+  			});
 
+  	QUnit.test("Test Message Change", function(assert, replacementText){
   		var testChangedMessage = "You clicked the button!";
-  		var replacementText = function(){
+  		/** var replacementText = function(){
   			"#testButton".trigger('click');
   			 return document.getElementById("replaceText").innerHTML;
-  			};
+  			}; **/
 
   		assert.equal(replacementText, testChangedMessage);
-  	})
+      done();
+  	});
+
+
 
   </script>
 
