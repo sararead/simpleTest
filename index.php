@@ -22,18 +22,5 @@ document.getElementById("replaceText").innerHTML = "You clicked the button!";
 	</div>
 
 
-
-<script>
-
-function test(messageChanged){
-	if(messageChanged===true){
-	return true;
-	} else {
-	return false;
-	}
-
-}
-</script>
-
  </body>
 </html>
