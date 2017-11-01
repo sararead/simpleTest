@@ -11,8 +11,6 @@ jobs:
           command: |
             echo "Running test"
             mkdir -p /tmp/test-results
-            make test
-
        
 notify:
    webhooks:
