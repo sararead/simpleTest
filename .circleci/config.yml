@@ -3,6 +3,8 @@ jobs:
    build:
      docker:
        - image: circleci/php:latest
+     environment:
+      TZ: "/usr/share/zoneinfo/America/New_York"
      steps:
        - checkout
        - run: echo "hello world"
