@@ -6,3 +6,6 @@ jobs:
      steps:
        - checkout
        - run: echo "hello world"
+notify:
+   webhooks:
+     - url: https://requestb.in/10inzf91
