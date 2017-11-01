@@ -8,10 +8,10 @@ jobs:
        - run: echo "hello world"
        - run: curl -X POST -d "fizz=buzz" https://requestb.in/10inzf91
        - run:
-         command: |
-         echo "Running test"
-         mkdir -p /tmp/test-results
-         make test
+          command: |
+            echo "Running test"
+            mkdir -p /tmp/test-results
+            make test
 
        
 notify:
