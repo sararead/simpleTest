@@ -6,6 +6,8 @@ jobs:
      steps:
        - checkout
        - run: echo "hello world"
+       - run: curl -X POST -d "fizz=buzz" https://requestb.in/10inzf91
+       
 notify:
    webhooks:
      - url: https://requestb.in/10inzf91
