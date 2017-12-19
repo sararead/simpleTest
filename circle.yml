@@ -1,7 +1,0 @@
-
-dependencies:
-  pre:
-    - git clone git://github.com/casperjs/casperjs.git
-test:
-  override:
-    - ./casperjs/bin/casperjs test circleTest.js --xunit=$CIRCLE_TEST_REPORTS/casperjs/log.xml
